@@ -1,0 +1,138 @@
+# 🏄 FridgeMate Sprint Plan (Windsurf Framework)
+
+## 🧠 Product Strategy Snapshot
+
+- **Goal**: Help people in shared living environments plan meals and groceries efficiently while minimizing food waste and storage clashes.
+- **MVP Timebox**: 6 weeks → 1 week discovery + 4 core sprints + 1 polish/demo week
+- **User**: Tech-savvy hacker house residents with limited fridge/pantry space, communal kitchens, and rotating members.
+- **Key Constraint**: Physical storage.
+
+## 🗓️ Sprint Plan Overview
+
+| Sprint | Focus | Key Outcomes |
+|--------|-------|--------------|
+| Week 0 | 🔍 Discovery & Validation | Define core problem, validate MVP scope |
+| Week 1 | 🧭 Onboarding & House Setup | Account creation, house join/create |
+| Week 2 | 📅 Meal Planner & Recipes | Generate meal plan, view recipes |
+| Week 3 | 🛒 Shopping List & Fridge Limit | Shopping list gen, fridge warning |
+| Week 4 | 🧊 MVP Polish & Inventory | Bug fixes, inventory screen |
+| Week 5 | 🎉 Demo, Deploy, Reflect | Internal demo, launch-ready build |
+
+## 🧭 Week 0 – Discovery & Validation
+
+**Goals**:
+- Talk to 3–5 real shared-living users.
+- Validate pain points: meal decision fatigue, fridge chaos, forgotten ingredients.
+- Nail MVP scope: 1 week of shared meals, auto-shopping list, shared house logic.
+
+**Deliverables**:
+- Problem-framing doc
+- UX storyboards
+- MVP User Journey map
+- Prioritized backlog
+- Setup WindSurf rituals: daily async standups, retro planning
+
+## 🏗️ Week 1 – Onboarding & House Setup
+
+**Goals**:
+- Let users create accounts, configure preferences, and group into “houses”.
+
+**Stories**:
+- Sign up / Login (email + Google OAuth)
+- Set dietary prefs + allergies
+- Create/join house with unique code
+
+**Design**:
+- Minimalist onboarding with emoji-friendly forms
+- Group name, invite link
+
+**Dev Checkpoints**:
+- Auth & profile storage
+- House/team model
+- Basic responsive layout
+
+## 🍽️ Week 2 – Meal Planner & Recipes
+
+**Goals**:
+- Generate meal plans that fit household needs.
+- View recipes with instructions.
+
+**Stories**:
+- Weekly plan generation (based on preferences, # people)
+- View/edit meal calendar
+- Recipe detail screen
+
+**Design**:
+- Meal grid (calendar UI)
+- Simple card view for recipes
+
+**Dev Checkpoints**:
+- MealPlan engine (naive version)
+- Recipe DB (static JSON or seeded backend)
+- Frontend calendar integration
+
+## 🛒 Week 3 – Shopping List & Fridge Awareness
+
+**Goals**:
+- Turn meal plans into shopping lists.
+- Show alerts if fridge space would be exceeded.
+
+**Stories**:
+- Auto-generated shopping list by ingredient type
+- Storage limit warning (“Fridge is 80% full”)
+- Mark items as purchased
+
+**Design**:
+- Checklist UI
+- Visual gauge for space usage
+
+**Dev Checkpoints**:
+- Quantity normalization for list
+- Fridge storage limit logic
+- Persistent shopping state
+
+## 🧊 Week 4 – MVP Polish + Inventory
+
+**Goals**:
+- Refine UX polish.
+- Let users track existing ingredients (optional).
+
+**Stories**:
+- Add/view/edit inventory
+- Autofill list from what's missing
+- First-time UX polish (empty states, tooltips)
+
+**Design**:
+- Inventory chips / tags
+- Light/dark mode toggle
+
+**Dev Checkpoints**:
+- Inventory model + sync
+- Error handling, toast notifications
+- Bug bash session
+
+## 🚀 Week 5 – Demo, Launch & Retro
+
+**Goals**:
+- Demo to internal stakeholders + test users.
+- Polish final interactions.
+- Prepare handoff or go live.
+
+**Stories**:
+- Interactive walkthrough mode
+- Collect feedback via in-app form
+- Create Notion README + Loom video
+
+**Dev Checkpoints**:
+- Final bug fixes
+- Deploy to Vercel / Netlify
+- Collect retro insights
+
+## 🧭 Windsurf Operating Rhythm
+
+- **Daily**: Async standups in Slack/Discord (“What I’m doing / Blockers / What’s next”)
+- **Weekly**: Retro + planning (Monday)
+- **Rituals**:
+  - Friday demo sync or async video
+  - Monday planning + priority realignment
+  - Midweek UX test (1 test per sprint)
