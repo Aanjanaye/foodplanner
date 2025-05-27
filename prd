@@ -1,0 +1,142 @@
+# 📄 Product Requirements Document (PRD)
+
+## Product Name
+**FridgeMate** (working title)
+
+## Author
+Aanjanaye
+
+## Date
+2025-05-27
+
+---
+
+## 1. Purpose
+
+FridgeMate is a food planning app designed for co-living environments like hacker houses, where kitchen storage is limited and efficient meal planning is essential. The app helps users create optimized meal menus based on their tastes, dietary restrictions, and available storage. It then generates a consolidated shopping list to avoid waste and duplication.
+
+---
+
+## 2. Problem Statement
+
+Hacker houses often face the following issues:
+
+- **Limited fridge and pantry space**
+- **Uncoordinated shopping** leading to overcrowding and food spoilage
+- **Last-minute meal decisions** that waste time and money
+- **Inconsistent dietary needs and preferences**
+
+FridgeMate solves this by turning meal planning into a collaborative, intelligent, and efficient process.
+
+---
+
+## 3. Goals
+
+- Minimize food waste and optimize storage use
+- Simplify and speed up weekly meal planning
+- Generate shared or individual shopping lists
+- Support dietary restrictions and user preferences
+- Make cooking at home easier, cheaper, and more consistent
+
+---
+
+## 4. Features
+
+### 4.1. User Profiles
+- Name, dietary restrictions, allergies
+- Preferences (e.g. vegetarian, low-carb, high-protein)
+- Cooking skill level (for filtering recipes)
+
+### 4.2. Meal Planner
+- Weekly calendar with recommended meals (breakfast, lunch, dinner)
+- User can lock/unlock specific meals
+- Options: "Solo", "Group", or “Randomized”
+
+### 4.3. Inventory Tracker (Optional MVP+)
+- Users can input what’s currently in the fridge/pantry
+- App recommends recipes based on available items
+- Shows storage space usage estimate (basic level)
+
+### 4.4. Recipe Engine
+- Pulls from built-in database or external APIs (e.g. Spoonacular, Edamam)
+- Filters recipes based on preferences, skills, and inventory
+- Tags meals by prep time, storage footprint, and difficulty
+
+### 4.5. Smart Shopping List
+- Consolidated list generated from the selected meal plan
+- Grouped by store section (Produce, Dairy, etc.)
+- Export options (PDF, mobile, shared link, integration with Instacart, etc.)
+- Option to assign items to specific housemates
+
+### 4.6. Storage Awareness
+- Items tagged by storage type (fridge, freezer, dry)
+- Warnings when selected meals exceed a configurable storage limit
+
+### 4.7. Social Features (MVP+)
+- Group meal voting or polling
+- Shared meal history and favorite recipes
+- “Who’s cooking?” assignment tool
+
+---
+
+## 5. Non-Goals
+
+- Real-time fridge sensor integration
+- Direct purchase from grocery stores
+- AI cooking assistant or recipe generation from scratch (for MVP)
+
+---
+
+## 6. Assumptions
+
+- Users have smartphones or access to a browser
+- Internet access is available for syncing and recipe search
+- Housemates are open to coordination and inputting preferences
+
+---
+
+## 7. Metrics for Success
+
+- 🧊 Reduction in food waste (survey-based self-reporting)
+- 🕒 Time saved per week on planning/shopping
+- 🛒 Frequency of grocery runs
+- 👥 Number of meals planned/shared per user per week
+- ✅ User retention (30-day, 60-day)
+
+---
+
+## 8. MVP Scope
+
+**Core MVP Features:**
+
+- User profiles & preferences
+- Basic meal planning calendar
+- Smart shopping list generator
+- Simple recipe filtering
+- Manual inventory tagging (optional if time allows)
+
+---
+
+## 9. Future Enhancements
+
+- AI-generated recipes based on inventory
+- Integrations with smart fridges or barcode scanners
+- Nutritional tracking and budget constraints
+- Voice assistant for hands-free cooking
+
+---
+
+## 10. UX Considerations
+
+- Minimalist UI (dark mode default for dev-heavy households)
+- Swipe-based calendar and recipe selection
+- Collaborative mode for shared screens in kitchens
+- Simple onboarding with smart defaults
+
+---
+
+## 11. Risks
+
+- **User input fatigue** (mitigated by defaults and recommendations)
+- **Inventory tracking accuracy** (may require optional use)
+- **Storage estimation complexity** (handled by tagging items by size/volume in future versions)
